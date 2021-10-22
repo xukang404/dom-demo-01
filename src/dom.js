@@ -1,7 +1,7 @@
 window.dom = {
   create(string) {
     const container = document.createElement("template");
-    container.innerHTML = string.trim();
+    container.innerHTML = string.trim();  //trim 去掉空格
     return container.content.firstChild;
   },
   after(node, node2) {
